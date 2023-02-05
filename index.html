@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadeusz Waluga - inforamtyk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+    <header>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__link" href="#o-mnie">Powitanie</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#hobby">Moje hobby</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#books">Ulubione książki</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="o-mnie" class="section section__borderOne">
+            <!--contenteditable - element edytowalny-->
+            <h1 class="section__header1 js-header1" contenteditable>Witam na mojej stronie (nagłówek możesz sobie
+                zmienić - jeżeli Ci się nie podoba)
+            </h1>
+            <p>
+                <button class="section__button--header js-buttonHeader">Usuń nagłówek</button>
+            </p>
+            <p>
+                <button class="section__button--theme js-buttonTheme">Przełącz na tryb <span
+                        class="js-changeTheme">nocny</span>
+                </button>
+            </p>
+            <h2 class="section__header2">Pozdrawiam wszystkich, którzy weszli tą stronę</h2>
+            <img width="200" src="images/zdjęcie.jpg" alt="Moje zdjęcie">
+            <p>Mam na imię <span class="section__interestingElement"><strong>Tadeusz</strong></span><br>Jestem ciekawy
+                świata, lubię uczyć się nowych rzeczy.
+            </p>
+            <p>Ukończyłem kurs <b>Pythona</b>. Jest język programowania <em>wysokiego poziomu</em>,
+                <i>interpretowny</i>, o prostej składni, lecz jego możliwości są prawie nieograniczone. <br>Ponieważ
+                Pythona za pomocą aplikacji webowych takich jak: <i>Djanogo</i> i <i>Flask</i> wykorzystyje się również
+                do tworzenia stron internetowych, pomocna jest również znajomość <span
+                    class="section__interestingElement">Java Script</span>.
+            </p>
+        </section>
+        <section id="hobby" class="section section__borderTwo">
+            <h2>Moje hobby</h2>
+            <h3>Sport</h3>
+            <p>Posiadam patent sternika jachtowego. Co roku żegluję po Wielkich Jeziorach Mazurskich, ale marzę o
+                rejsach po morzach i oceanach.
+            </p>
+            <p>Codziennie jeżdżę na rowerze. Raz w tygodniu pływam na basanie.</p>
+            <h3>Zwierzęta</h3>
+            <p>Posiadam 2 psy. 6 letnią suczę shih tzu o imieniu: Masza - to pies mojej młodszej córki oraz 2
+                letniego mieszańca: Axela, który przybył do nas ze schroniska. Teraz chodzę na spacery z dwoma psami i
+                staram się je wychować.</p>
+            <img width="300" src="images/masza.jpg" alt="Masza">
+            <img width="200" src="images/axel.jpg" alt="Axel">
+        </section>
+        <section id="books" class="section__otherPadding">
+
+            <h3>Książki</h3>
+
+            <table class="table">
+                <caption class="table__caption">Moje ulubione książki</caption>
+                <thead>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope=”col”>Autor</th>
+                        <th class="table__cell table__cell--header" scope=”col”>Tytuł</th>
+                        <th class="table__cell table__cell--header" scope="col">Rodzaj literatury</th>
+                        <th class="table__cell table__cell--header" scope=”col”>Ocena na portalu "Lubimy czytać"</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope=”row” rowspan="5">Andrzej Sapkowski</th>
+                        <td class="table__cell">Krew elfów</td>
+                        <td class="table__cell">fantasy</td>
+                        <td class="table__cell">8,2</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Czas pogardy</td>
+                        <td class="table__cell">fantasy</td>
+                        <td class="table__cell">8,2</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Chrzest ognia</td>
+                        <td class="table__cell">fantasy</td>
+                        <td class="table__cell">8,4</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Wieża Jaskółki</td>
+                        <td class="table__cell">fantasy</td>
+                        <td class="table__cell">8,3</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Pani Jeziora</td>
+                        <td class="table__cell">fantasy</td>
+                        <td class="table__cell">8,2</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope=”row” rowspan="3">Stieg Larsson</th>
+                        <td class="table__cell">Mężczyźni, którzy nienawidzą kobiet</td>
+                        <td class="table__cell">kryminał</td>
+                        <td class="table__cell">8,2</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Dziewczyna, która igrała z ogniem</td>
+                        <td class="table__cell">kryminał</td>
+                        <td class="table__cell">8,2</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Zamek z piasku, który runął</td>
+                        <td class="table__cell">kryminał</td>
+                        <td class="table__cell">8,1</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope=”row” rowspan="3">Frank Herbert</th>
+                        <td class="table__cell">Diuna</td>
+                        <td class="table__cell">fantasy, science fiction</td>
+                        <td class="table__cell">8,2</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Mesjasz Diuny</td>
+                        <td class="table__cell">fantasy, science fiction</td>
+                        <td class="table__cell">7,3</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Dzieci Diuny</td>
+                        <td class="table__cell">fantasy, science fiction</td>
+                        <td class="table__cell">7,5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        Kontakt: 000-000-000
+    </footer>
+
+</body>
+
+</html>
