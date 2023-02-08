@@ -1,6 +1,6 @@
 # Tadeusz Waluga - My first page
 
-![Tadek](images/zdjęcie.jpg)
+![Tadek](images/my_photo.jpg)
 
 ##Demo
 
