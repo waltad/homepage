@@ -3,24 +3,28 @@
         console.log("Hello! How are you?");
     }
     
-    const onChangeThemeClic = () => {
+    const toggleTheme = () => {
+        const body = document.querySelector(".body");
+        const changeTheme = document.querySelector(".js-changeTheme");
         body.classList.toggle("body__dark");
         changeTheme.innerText = body.classList.contains("body__dark") ? "dzienny" : "nocny";
     }
 
-    const onHeaderRemoveClic = () => {
+    const removeHeader = () => {
+        const header = document.querySelector(".js-header");
         header.remove()
     }
     
-    welcome();
-    
-    let buttonHeader = document.querySelector(".js-buttonHeader");
-    let header = document.querySelector(".js-header");
-    let buttonTheme = document.querySelector(".js-buttonTheme");
-    let body = document.querySelector(".body");
-    let  changeTheme = document.querySelector(".js-changeTheme");
-    
-    buttonHeader.addEventListener("click", onHeaderRemoveClic);
-    
-    buttonTheme.addEventListener("click", onChangeThemeClic);
+    const init = () => {
+        const buttonHeader = document.querySelector(".js-buttonHeader");        
+        const buttonTheme = document.querySelector(".js-buttonTheme");
+            
+        buttonHeader.addEventListener("click", removeHeader);    
+        buttonTheme.addEventListener("click", toggleTheme);
+            
+        welcome();
+    }         
+
+init ();
+
 }
