@@ -1,0 +1,46 @@
+.navigation {
+    padding: 20px 20px;
+}
+
+.navigation__item {
+    display: inline;
+    margin: 20px 0;
+    max-width: 150px;
+    text-align: center;
+    list-style-type: none;
+    list-style-position: inside;
+    border-width: 10px;
+    border-style: ridge;
+    border-color: #2c03f8;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+.navigation__item:hover {
+    border-color: grey;
+    border-radius: 10px;
+    background-color: yellowgreen;
+    outline: none;
+}
+
+.navigation__list {
+    padding: 0px;
+}
+
+.navigation__link {
+    color: crimson;
+    text-decoration: none;
+}
+
+.navigation__link:visited {
+    color: darkred;
+}
+
+.navigation__link:focus {
+    outline: 5px currentColor;
+}
+
+.navigation__link:active {
+    color: navy;
+
+}

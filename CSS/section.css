@@ -1,0 +1,55 @@
+.section {
+    padding: 0 10px;
+}
+
+.section__borderOne {
+    border-color: chartreuse;
+    border-style: groove;
+    border-width: 15px;
+    border-radius: 25px / 15px;
+    outline-color: orange;
+    outline-style: dotted;
+    outline-width: 5px;
+    outline-offset: 5px;
+}
+
+.section__header {
+    color: #2712da;
+}
+
+.section__button--header {
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    border-width: 10px;
+    border-style: ridge;
+    border-color: #2c03f8;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+.section__button--theme {
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    border-width: 10px;
+    border-style: ridge;
+    border-color: #000000;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+.section__interestingElement {
+    color: #ce8601;
+}
+
+.section__borderTwo {
+    border-color: coral;
+    border-style: double;
+    border-width: 10px;
+    border-radius: 15px / 30px;
+    box-shadow: 5px -5px 27px 5px #31F70E,
+        inset 0px 0px 20px 17px #E6F202;
+}
+
+.section__otherPadding {
+    padding: 0 20px;
+}
