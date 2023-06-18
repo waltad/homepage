@@ -12,7 +12,7 @@
 
     const removeHeader = () => {
         const header = document.querySelector(".js-header");
-        header.remove()
+        header.remove();
     }
 
     const init = () => {

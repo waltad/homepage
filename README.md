@@ -2,7 +2,7 @@
 
 ![Tadek](images/my_photo.jpg)
 
-##Demo
+## Demo
 
 https://waltad.github.io/homepage/
 
